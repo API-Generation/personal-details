@@ -1,0 +1,19 @@
+modelFileUrl: "https://github.com/api-generation/personal-details/blob/main/personal-details.xml"
+outputDirUrl: "https://github.com/api-generation/personal-details/tree/main/generated/"
+modelConfig:
+  packageNames:
+    typesPackage: "Personal Details"
+dependencies:
+  "Core Types":
+    modelFileUrl: "https://github.com/api-generation/core-types/blob/main/generated/mtt-models/core-types.json"
+    version: "1.0.0"
+loader:
+  configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/loaders/ea-xmi/config.yaml"
+  outputSubDir: "mtt-models"
+generators:
+  mkdocs:
+    configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/generators/mkdoc/config.yaml"
+    outputSubDir: "docs/mkdocs"
+
+
+
